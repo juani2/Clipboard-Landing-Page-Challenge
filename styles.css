@@ -25,10 +25,6 @@
 }
 /* ============================================================================================================================ */
 
-
-
-
-
 /* ============================================================================================================================ */
 /* Responsive Typography Styles
  * Styling order:
@@ -102,10 +98,6 @@ h3 {
 }
 /* ============================================================================================================================ */
 
-
-
-
-
 /* ============================================================================================================================ */
 /* Image Utilites */
 .img--fluid {
@@ -115,10 +107,6 @@ h3 {
 
 /* ============================================================================================================================ */
 
-
-
-
-
 /* ============================================================================================================================ */
 /* Buttons */
 .button {
@@ -126,12 +114,16 @@ h3 {
     padding: 13px 36px;
     border-radius: 28px;
     background-color: var(--color-neutral--primary);
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
     text-decoration: none;
     color: #ffffff;
     position: relative;
 }
 /* Adds a translucent overlay on hover of buttons */
-.button:hover::after{
+.button:hover::after {
     content: "";
     position: absolute;
     top: 0;
@@ -152,9 +144,6 @@ h3 {
 }
 /* ============================================================================================================================ */
 
-
-
-
 /* ============================================================================================================================ */
 /* Common Layout Patterns */
 .container {
@@ -170,25 +159,33 @@ h3 {
 
 /* ============================================================================================================================ */
 
-
-
-
-
 /* ============================================================================================================================ */
+body {
+    background-image: url("/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+@media screen and (min-width: 426px) {
+    body {
+        background-image: url("/images/bg-header-desktop.png");
+    }
+}
+
 /* Page Header Styles */
 .page-header__logo {
     max-width: 125px;
     max-height: 125px;
-    margin-top: clamp(123px,calc((128/375)*100vw),128px);
+    margin-top: clamp(123px, calc((128 / 375) * 100vw), 128px);
     margin-bottom: 64px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .page-header__logo {
         margin-bottom: 56px;
     }
 }
 
-.page-header__copy{
+.page-header__copy {
     max-width: 53ch;
     margin-bottom: 48px;
 }
@@ -201,8 +198,8 @@ h3 {
     gap: 24px;
 }
 
-@media screen and (min-width:570px) {
-    .page-header__cta{
+@media screen and (min-width: 570px) {
+    .page-header__cta {
         flex-direction: row;
         gap: 16px;
     }
