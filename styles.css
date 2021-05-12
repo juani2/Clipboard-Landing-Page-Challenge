@@ -314,4 +314,9 @@ img[src="/images/image-computer.png"]{
     max-width: 60ch;
     margin-bottom: clamp(64px, calc((64/375)*100vw),110px);
 }
+
+img[src="/images/image-devices.png"]{
+    max-width: 905px;
+    max-height: 575px;
+}
 /* ============================================================================================================================ */
