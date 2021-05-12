@@ -177,7 +177,10 @@ h3 {
     margin: auto;
 }
 
-.page-header, .page-section-2, .page-section-3, .page-section-4 {
+.page-header,
+.page-section-2,
+.page-section-3,
+.page-section-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,13 +251,13 @@ h3 {
     align-items: center;
 }
 
-img[src="/images/image-computer.png"]{
+img[src="/images/image-computer.png"] {
     /* Ensures image will not expand past its orignal width and height. */
     max-width: 752px;
     max-height: 572px;
 }
 
-.img-flex-container{
+.img-flex-container {
     margin-bottom: 56px;
 }
 
@@ -263,7 +266,7 @@ img[src="/images/image-computer.png"]{
 }
 
 .feature-1:nth-child(2) {
-    margin: clamp(48px,calc((48/375)*100vw),56px) 0;
+    margin: clamp(48px, calc((48 / 375) * 100vw), 56px) 0;
 }
 
 .feature-1 p {
@@ -284,7 +287,7 @@ img[src="/images/image-computer.png"]{
         margin-left: -32px;
     }
 
-    .img-flex-container{
+    .img-flex-container {
         margin-right: 3rem;
         margin-bottom: 0;
     }
@@ -296,42 +299,34 @@ img[src="/images/image-computer.png"]{
 }
 /* ============================================================================================================================ */
 
-
-
-
-
 /* ============================================================================================================================ */
 .page-section-2 {
     margin-bottom: 96px;
 }
-@media screen and (min-width:768px){
-    .page-section-2{
+@media screen and (min-width: 768px) {
+    .page-section-2 {
         margin-bottom: 70px;
     }
 }
 .page-section-2__copy {
     max-width: 60ch;
-    margin-bottom: clamp(64px, calc((64/375)*100vw),110px);
+    margin-bottom: clamp(64px, calc((64 / 375) * 100vw), 110px);
 }
 
-img[src="/images/image-devices.png"]{
+img[src="/images/image-devices.png"] {
     max-width: 905px;
     max-height: 575px;
 }
 /* ============================================================================================================================ */
 
-
-
-
-
 /* ============================================================================================================================ */
 .page-section-3 {
-    margin-bottom: clamp(131px, calc((131/375)*100vh),150px);
+    margin-bottom: clamp(131px, calc((131 / 375) * 100vw), 150px);
 }
-.page-section-3__header{
+.page-section-3__header {
     margin-bottom: 90px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .page-section-3__header {
         margin-bottom: 72px;
     }
@@ -342,30 +337,30 @@ img[src="/images/image-devices.png"]{
 }
 
 .feature-2:nth-child(2) {
-    margin: 56px 0
+    margin: 56px 0;
 }
 
 .feature-2 p {
     max-width: 34ch;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .feature-list-2 {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         gap: 30px;
     }
-    .feature-2:nth-child(1){
+    .feature-2:nth-child(1) {
         height: 216px;
     }
     .feature-2:nth-child(2) {
         height: 182px;
-        margin: 0
+        margin: 0;
     }
     .feature-2:nth-child(3) {
         height: 182px;
     }
-    .feature-2{
+    .feature-2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -373,10 +368,6 @@ img[src="/images/image-devices.png"]{
     }
 }
 /* ============================================================================================================================ */
-
-
-
-
 
 /* ============================================================================================================================ */
 .trusted-brands {
@@ -388,7 +379,7 @@ img[src="/images/image-devices.png"]{
     margin-bottom: 170px;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
     .trusted-brands {
         height: auto;
         flex-direction: row;
@@ -397,21 +388,17 @@ img[src="/images/image-devices.png"]{
 }
 /* ============================================================================================================================ */
 
-
-
-
-
 /* ============================================================================================================================ */
 .page-section-4 {
     margin-bottom: 170px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .page-section-4 {
         margin-bottom: 170px;
     }
 }
 .page-section-4__copy {
     max-width: 60ch;
-    margin-bottom: clamp(46px,calc((46/375)*100vw),48px);
+    margin-bottom: clamp(46px, calc((46 / 375) * 100vw), 48px);
 }
 /* ============================================================================================================================ */
