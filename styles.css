@@ -305,7 +305,7 @@ img[src="/images/image-computer.png"] {
 }
 @media screen and (min-width: 768px) {
     .page-section-2 {
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
 }
 .page-section-2__copy {
