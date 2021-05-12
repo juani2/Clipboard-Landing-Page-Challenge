@@ -264,7 +264,7 @@ img[src="/images/image-computer.png"]{
 }
 
 .feature:nth-child(2) {
-    margin: clamp(48px,calc((48/375)*100vh),56px) 0;
+    margin: clamp(48px,calc((48/375)*100vw),56px) 0;
 }
 
 .feature p {
@@ -278,6 +278,7 @@ img[src="/images/image-computer.png"]{
         max-width: 1212px;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         margin-left: -32px;
     }
 
