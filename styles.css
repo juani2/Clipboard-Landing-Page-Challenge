@@ -163,7 +163,7 @@ h3 {
     margin: auto;
 }
 
-.page-header {
+.page-header, .page-section-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,11 +218,11 @@ h3 {
 .page-section-1 {
     /* Limits width to the target desktop breakpoint as per designed. */
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 186px auto;
 }
 
 .page-section-1__header {
-    margin-bottom: clamp(65px, calc((65 / 375) * 100vh), 80px);
+    margin-bottom: clamp(65px, calc((65 / 375) * 100vw), 80px);
 }
 
 .page-section-1__header .container {
@@ -272,6 +272,9 @@ img[src="/images/image-computer.png"]{
 }
 
 @media screen and (min-width: 768px) {
+    .page-section-1 {
+        margin-bottom: 150px;
+    }
     .page-section-1__main {
         width: 100%;
         margin: unset;
@@ -291,5 +294,24 @@ img[src="/images/image-computer.png"]{
         margin-top: 68px;
         text-align: left;
     }
+}
+/* ============================================================================================================================ */
+
+
+
+
+
+/* ============================================================================================================================ */
+.page-section-2 {
+    margin-bottom: 96px;
+}
+@media screen and (min-width:768px){
+    .page-section-2{
+        margin-bottom: 70px;
+    }
+}
+.page-section-2__copy {
+    max-width: 60ch;
+    margin-bottom: clamp(64px, calc((64/375)*100vw),110px);
 }
 /* ============================================================================================================================ */
