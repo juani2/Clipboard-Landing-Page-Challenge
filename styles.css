@@ -1,0 +1,209 @@
+/* ============================================================================================================================ */
+/* Box Model Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Site Wide Variables */
+:root {
+    /* Branding Colors */
+    --color--primary: hsla(171, 66%, 44%, 1);
+    --color--secondary: hsla(233, 100%, 69%, 1);
+
+    /* For masking branding colors during hover state */
+    --color--hover-mask: hsla(0, 0%, 100%, 0.25);
+
+    /* Neutral Colors */
+    --color-neutral--primary: hsl(210, 10%, 33%);
+    --color-neutral--secondary: hsl(201, 11%, 66%);
+
+    /* Font Families */
+    --font-family--heading: "Bai Jamjuree", sans-serif;
+    --font-family--body: "Bai Jamjuree", sans-serif;
+}
+/* ============================================================================================================================ */
+
+
+
+
+
+/* ============================================================================================================================ */
+/* Responsive Typography Styles
+ * Styling order:
+ *      font sizes, line-heights, letter-spacings, margin-bottom,
+ *      font style, font-weight, font-family, color
+ */
+html,
+body {
+    /* Note: calc((16/375)*100vw) = 16px on Screen with viewport width of 375px */
+    font-size: clamp(16px, calc((16 / 375) * 100vw), 18px);
+    line-height: clamp(26px, calc((16 / 375) * 100vw), 30px);
+    letter-spacing: clamp(0.12px, calc((0.12 / 375) * 100vw), 0.14px);
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Bai Jamjuree", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-neutral--secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Common for all headings */
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-neutral--primary);
+}
+
+h1 {
+    font-size: clamp(32px, calc((32 / 375) * 100vw), 46px);
+    line-height: clamp(40px, calc((40 / 375) * 100vw), 57.5px);
+    /* Clamps the value of letter spacing between -0.52px and -0.75px Inversely grows with viewport using the -1 multiplier*/
+    letter-spacing: calc(-1 * (clamp(0.52px, calc((0.52 / 375) * 100vw), 0.75px)));
+    margin-bottom: 16px;
+}
+h2 {
+    font-size: clamp(28px, calc((28 / 375) * 100vw), 36px);
+    line-height: clamp(35px, calc((35 / 375) * 100vw), 45px);
+    /* Clamps the value of letter spacing between -0.52px and -0.75px Inversely grows with viewport using the -1 multiplier*/
+    letter-spacing: calc(-1 * (clamp(0.46px, calc((0.46 / 375) * 100vw), 0.59px)));
+    margin-bottom: clamp(16px, calc((16 / 375) * 100vw), 19px);
+}
+h3 {
+    /* As per design file, h3 is not responsive font */
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.39px;
+    /* Margin grows inversely proportional with respect to viewport. Expressions in the 3rd parameter of clamp function were based on trial and error :) */
+    margin-bottom: clamp(8px, calc(10px - ((0.5 / 375) * 100vw)), 10px);
+}
+
+.text--lead {
+    /* use for supporting copy for main heading or to provide contrast from the rest of the body copy of site */
+    font-size: clamp(16px, calc((16 / 375) * 100vw), 20px);
+    line-height: clamp(26px, calc((26 / 375) * 100vw), 30px);
+    letter-spacing: clamp(0.12px, calc((0.12 / 375) * 100vw), 0.15px);
+}
+
+.text--caption {
+    /* Use for supporting copy for imagery or to list features and benifits on site. Typically comes after h3 and below.
+     * Also, based on design, only line-height is responsive.*/
+    font-size: 16px;
+    line-height: clamp(26px, calc((26 / 375) * 100vw), 30px);
+    letter-spacing: 0.12px;
+}
+
+.text-center {
+    text-align: center;
+}
+/* ============================================================================================================================ */
+
+
+
+
+
+/* ============================================================================================================================ */
+/* Image Utilites */
+.img--fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* ============================================================================================================================ */
+
+
+
+
+
+/* ============================================================================================================================ */
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 13px 36px;
+    border-radius: 28px;
+    background-color: var(--color-neutral--primary);
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+/* Adds a translucent overlay on hover of buttons */
+.button:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.253469);
+}
+
+.button--primary {
+    background: var(--color--primary);
+    box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
+.button--secondary {
+    background: #6174ff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+/* ============================================================================================================================ */
+
+
+
+
+/* ============================================================================================================================ */
+/* Common Layout Patterns */
+.container {
+    width: min(83.2%, 1110px);
+    margin: auto;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ============================================================================================================================ */
+
+
+
+
+
+/* ============================================================================================================================ */
+/* Page Header Styles */
+.page-header__logo {
+    max-width: 125px;
+    max-height: 125px;
+    margin-top: clamp(123px,calc((128/375)*100vw),128px);
+    margin-bottom: 64px;
+}
+@media screen and (min-width:768px) {
+    .page-header__logo {
+        margin-bottom: 56px;
+    }
+}
+
+.page-header__copy{
+    max-width: 53ch;
+    margin-bottom: 48px;
+}
+
+.page-header__cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+@media screen and (min-width:570px) {
+    .page-header__cta{
+        flex-direction: row;
+        gap: 16px;
+    }
+}
