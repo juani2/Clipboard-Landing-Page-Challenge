@@ -163,7 +163,7 @@ h3 {
     margin: auto;
 }
 
-.page-header, .page-section-2 {
+.page-header, .page-section-2, .page-section-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,15 +259,15 @@ img[src="/images/image-computer.png"]{
     margin-bottom: 56px;
 }
 
-.feature-list {
+.feature-list-1 {
     text-align: center;
 }
 
-.feature:nth-child(2) {
+.feature-1:nth-child(2) {
     margin: clamp(48px,calc((48/375)*100vw),56px) 0;
 }
 
-.feature p {
+.feature-1 p {
     max-width: 34ch;
 }
 
@@ -290,7 +290,7 @@ img[src="/images/image-computer.png"]{
         margin-bottom: 0;
     }
 
-    .feature-list {
+    .feature-list-1 {
         margin-top: 68px;
         text-align: left;
     }
@@ -318,5 +318,59 @@ img[src="/images/image-computer.png"]{
 img[src="/images/image-devices.png"]{
     max-width: 905px;
     max-height: 575px;
+}
+/* ============================================================================================================================ */
+
+
+
+
+
+/* ============================================================================================================================ */
+.page-section-3 {
+    margin-bottom: clamp(131px, calc((131/375)*100vh),150px);
+}
+.page-section-3__header{
+    margin-bottom: 90px;
+}
+@media screen and (min-width:768px) {
+    .page-section-3__header {
+        margin-bottom: 72px;
+    }
+}
+
+.feature-list-2 {
+    text-align: center;
+}
+
+.feature-2:nth-child(2) {
+    margin: 56px 0
+}
+
+.feature-2 p {
+    max-width: 34ch;
+}
+@media screen and (min-width:768px) {
+    .feature-list-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 30px;
+    }
+    .feature-2:nth-child(1){
+        height: 216px;
+    }
+    .feature-2:nth-child(2) {
+        height: 182px;
+        margin: 0
+    }
+    .feature-2:nth-child(3) {
+        height: 182px;
+    }
+    .feature-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 /* ============================================================================================================================ */
