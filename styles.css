@@ -454,7 +454,7 @@ img[src="/images/image-devices.png"] {
 }
 
 .page-footer__links a {
-    color: var(--color-neutral--secondary);
+    color: var(--color-neutral--primary);
 }
 
 .page-footer__social-icons {
